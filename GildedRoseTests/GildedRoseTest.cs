@@ -23,6 +23,22 @@ public class GildedRoseTest
         items[0].SellIn.Should().Be(-1);
         items[0].Quality.Should().Be(0);
     }
+
+    
+    [Fact]
+    public Task Approve_Items_Should_Return_Expected_Values()
+    {
+        var items = new List<Item> { new() { Name = "foo", SellIn = 0, Quality = 0 } };
+        var app = new GildedRose(items);
+        app.UpdateQuality();
+       return Verifier.Verify(items);
+        
+        
+    }
+
+    
+    
+    
     
     
     
