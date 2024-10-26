@@ -29,7 +29,7 @@ public class GildedRoseTest
     {
         string[] names = ["foo", "Aged Brie", "Backstage passes to a TAFKAL80ETC concert" ];
         int[] qualities = [0,-1,1,49,50,51];
-        int[] sellIns = [100];
+        int[] sellIns = [100,5,6,10,11,0,-1];
         
         // var item = DoStuff(names[0], qualities[0]);
        
