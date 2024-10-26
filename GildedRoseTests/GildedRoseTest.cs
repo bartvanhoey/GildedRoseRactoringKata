@@ -27,7 +27,7 @@ public class GildedRoseTest
     [Fact]
     public Task Approve_Items_Should_Return_Expected_Values()
     {
-        string[] names = ["foo", "Aged Brie", "Backstage passes to a TAFKAL80ETC concert" ];
+        string[] names = ["foo", "Aged Brie", "Backstage passes to a TAFKAL80ETC concert", "Sulfuras, Hand of Ragnaros" ];
         int[] qualities = [0,-1,1,49,50,51];
         int[] sellIns = [100,5,6,10,11,0,-1];
         
