@@ -29,17 +29,18 @@ public class GildedRoseTest
     {
         string[] names = ["foo"];
         var item = DoStuff(names[0]);
-
-
-        return Verify(item);
+       
+        return VerifyCombinations(DoStuff, names.ToArray());
+        
+         return Verify(item);
     }
 
-    private static Item DoStuff(string name)
+    private static string DoStuff(string name)
     {
         var items = new List<Item> { new() { Name = name, SellIn = 0, Quality = 0 } };
         var app = new GildedRose(items);
         app.UpdateQuality();
         var item = items[0];
-        return item;
+        return $"{item.Name}#{item.SellIn}#{item.Quality}";
     }
 }
