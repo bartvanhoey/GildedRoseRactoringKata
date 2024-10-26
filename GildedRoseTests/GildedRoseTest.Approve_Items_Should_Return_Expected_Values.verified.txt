@@ -1,6 +1,4 @@
-﻿[
-  {
-    Name: foo,
-    SellIn: -1
-  }
-]
+﻿{
+  Name: foo,
+  SellIn: -1
+}
