@@ -27,7 +27,7 @@ public class GildedRoseTest
     [Fact]
     public Task Approve_Items_Should_Return_Expected_Values()
     {
-        string[] names = ["foo", "Aged Brie" ];
+        string[] names = ["foo", "Aged Brie", "Backstage passes to a TAFKAL80ETC concert" ];
         var item = DoStuff(names[0]);
        
         return VerifyCombinations(DoStuff, names.ToArray());
