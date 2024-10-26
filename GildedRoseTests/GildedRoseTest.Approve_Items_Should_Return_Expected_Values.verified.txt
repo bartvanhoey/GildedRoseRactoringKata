@@ -1,0 +1,20 @@
+﻿{
+  foo                                      ,  0, 100: foo#99#0,
+  foo                                      , -1, 100: foo#99#-1,
+  foo                                      ,  1, 100: foo#99#0,
+  foo                                      , 49, 100: foo#99#48,
+  foo                                      , 50, 100: foo#99#49,
+  foo                                      , 51, 100: foo#99#50,
+  Aged Brie                                ,  0, 100: Aged Brie#99#1,
+  Aged Brie                                , -1, 100: Aged Brie#99#0,
+  Aged Brie                                ,  1, 100: Aged Brie#99#2,
+  Aged Brie                                , 49, 100: Aged Brie#99#50,
+  Aged Brie                                , 50, 100: Aged Brie#99#50,
+  Aged Brie                                , 51, 100: Aged Brie#99#51,
+  Backstage passes to a TAFKAL80ETC concert,  0, 100: Backstage passes to a TAFKAL80ETC concert#99#1,
+  Backstage passes to a TAFKAL80ETC concert, -1, 100: Backstage passes to a TAFKAL80ETC concert#99#0,
+  Backstage passes to a TAFKAL80ETC concert,  1, 100: Backstage passes to a TAFKAL80ETC concert#99#2,
+  Backstage passes to a TAFKAL80ETC concert, 49, 100: Backstage passes to a TAFKAL80ETC concert#99#50,
+  Backstage passes to a TAFKAL80ETC concert, 50, 100: Backstage passes to a TAFKAL80ETC concert#99#50,
+  Backstage passes to a TAFKAL80ETC concert, 51, 100: Backstage passes to a TAFKAL80ETC concert#99#51
+}

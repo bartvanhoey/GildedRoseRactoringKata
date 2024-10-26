@@ -12,31 +12,33 @@ namespace GildedRoseTests;
 
 public class GildedRoseTest
 {
-    [Fact]
-    public void Test_Item_Should_Return_Expected_Values()
-    {
-        var items = new List<Item> { new() { Name = "foo", SellIn = 0, Quality = 0 } };
-        var app = new GildedRose(items);
-        app.UpdateQuality();
-        items[0].Name.Should().Be("foo");
-        items[0].SellIn.Should().Be(-1);
-        items[0].Quality.Should().Be(0);
-    }
+    // [Fact]
+    // public void Test_Item_Should_Return_Expected_Values()
+    // {
+    //     var items = new List<Item> { new() { Name = "foo", SellIn = 0, Quality = 0 } };
+    //     var app = new GildedRose(items);
+    //     app.UpdateQuality();
+    //     items[0].Name.Should().Be("foo");
+    //     items[0].SellIn.Should().Be(-1);
+    //     items[0].Quality.Should().Be(0);
+    // }
 
 
     [Fact]
     public Task Approve_Items_Should_Return_Expected_Values()
     {
         string[] names = ["foo", "Aged Brie", "Backstage passes to a TAFKAL80ETC concert" ];
-        int[] qualities = [0];
-        var item = DoStuff(names[0], qualities[0]);
+        int[] qualities = [0,-1,1,49,50,51];
+        int[] sellIns = [100];
+        
+        // var item = DoStuff(names[0], qualities[0]);
        
-        return VerifyCombinations(DoStuff, names, qualities);
+        return VerifyCombinations(DoStuff, names, qualities, sellIns);
     }
 
-    private static string DoStuff(string name, int quality)
+    private static string DoStuff(string name, int quality, int sellIn)
     {
-        var items = new List<Item> { new() { Name = name, SellIn = 0, Quality = quality } };
+        var items = new List<Item> { new() { Name = name, SellIn = sellIn, Quality = quality } };
         var app = new GildedRose(items);
         app.UpdateQuality();
         var item = items[0];
