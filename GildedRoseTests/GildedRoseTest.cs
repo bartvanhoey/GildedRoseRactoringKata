@@ -28,14 +28,15 @@ public class GildedRoseTest
     public Task Approve_Items_Should_Return_Expected_Values()
     {
         string[] names = ["foo", "Aged Brie", "Backstage passes to a TAFKAL80ETC concert" ];
-        var item = DoStuff(names[0]);
+        int[] qualities = [0];
+        var item = DoStuff(names[0], qualities[0]);
        
-        return VerifyCombinations(DoStuff, names.ToArray());
+        return VerifyCombinations(DoStuff, names, qualities);
     }
 
-    private static string DoStuff(string name)
+    private static string DoStuff(string name, int quality)
     {
-        var items = new List<Item> { new() { Name = name, SellIn = 0, Quality = 0 } };
+        var items = new List<Item> { new() { Name = name, SellIn = 0, Quality = quality } };
         var app = new GildedRose(items);
         app.UpdateQuality();
         var item = items[0];

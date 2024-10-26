@@ -1,5 +1,0 @@
-﻿{
-  foo                                      : foo#-1#0,
-  Aged Brie                                : Aged Brie#-1#2,
-  Backstage passes to a TAFKAL80ETC concert: Backstage passes to a TAFKAL80ETC concert#-1#0
-}
