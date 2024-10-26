@@ -27,13 +27,19 @@ public class GildedRoseTest
     [Fact]
     public Task Approve_Items_Should_Return_Expected_Values()
     {
-        var name = "foo";
+        string[] names = ["foo"];
+        var item = DoStuff(names[0]);
+
+
+        return Verify(item);
+    }
+
+    private static Item DoStuff(string name)
+    {
         var items = new List<Item> { new() { Name = name, SellIn = 0, Quality = 0 } };
         var app = new GildedRose(items);
         app.UpdateQuality();
         var item = items[0];
-        
-        
-        return Verify(item);
+        return item;
     }
 }
