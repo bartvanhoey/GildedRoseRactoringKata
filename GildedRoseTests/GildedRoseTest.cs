@@ -27,12 +27,10 @@ public class GildedRoseTest
     [Fact]
     public Task Approve_Items_Should_Return_Expected_Values()
     {
-        string[] names = ["foo"];
+        string[] names = ["foo", "Aged Brie" ];
         var item = DoStuff(names[0]);
        
         return VerifyCombinations(DoStuff, names.ToArray());
-        
-         return Verify(item);
     }
 
     private static string DoStuff(string name)

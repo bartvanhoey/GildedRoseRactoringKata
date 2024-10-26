@@ -1,3 +1,4 @@
 ﻿{
-  foo: foo#-1#0
+  foo      : foo#-1#0,
+  Aged Brie: Aged Brie#-1#2
 }
