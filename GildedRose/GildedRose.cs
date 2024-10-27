@@ -16,21 +16,11 @@ public class GildedRose(IList<Item> items)
     {
         if (item.Name == "Aged Brie")
         {
-            if (item.Name != "Aged Brie" && item.Name != "Backstage passes to a TAFKAL80ETC concert")
-            {
-            
-            }
-            else
+            if (item.Name == "Aged Brie" || item.Name == "Backstage passes to a TAFKAL80ETC concert")
             {
                 if (item.Quality < 50)
                 {
                     item.Quality = item.Quality + 1;
-
-                    if (item.Name == "Backstage passes to a TAFKAL80ETC concert")
-                    {
-                        
-                        
-                    }
                 }
             }
 
@@ -41,11 +31,7 @@ public class GildedRose(IList<Item> items)
 
             if (item.SellIn < 0)
             {
-                if (item.Name != "Aged Brie")
-                {
-                    
-                }
-                else
+                if (item.Name == "Aged Brie")
                 {
                     if (item.Quality < 50)
                     {
