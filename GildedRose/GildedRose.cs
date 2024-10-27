@@ -6,7 +6,7 @@ public class GildedRose(IList<Item> items)
 {
     public void UpdateQuality()
     {
-        foreach (var item in items)
+    foreach (var item in items)
         {                                                                                                                                                                                                                                                                                                                                                                
             AppleSauce(item);
         }
@@ -14,6 +14,14 @@ public class GildedRose(IList<Item> items)
 
     private static void AppleSauce(Item item)
     {
+        if (item.Name == "Aged Brie")
+        {
+            
+        }
+        else
+        {
+            
+        }
         AppleSauce2(item);
     }
 
