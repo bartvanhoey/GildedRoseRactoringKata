@@ -62,20 +62,7 @@ public class GildedRose(IList<Item> items)
             {
                 if (item.Name != "Aged Brie")
                 {
-                    if (item.Name != "Backstage passes to a TAFKAL80ETC concert")
-                    {
-                        if (item.Quality > 0)
-                        {
-                            if (item.Name != "Sulfuras, Hand of Ragnaros")
-                            {
-                                item.Quality = item.Quality - 1;
-                            }
-                        }
-                    }
-                    else
-                    {
-                        item.Quality = item.Quality - item.Quality;
-                    }
+                    
                 }
                 else
                 {
@@ -149,13 +136,7 @@ public class GildedRose(IList<Item> items)
                         item.Quality = item.Quality - item.Quality;
                     }
                 }
-                else
-                {
-                    if (item.Quality < 50)
-                    {
-                        item.Quality = item.Quality + 1;
-                    }
-                }
+                
             }
         }
     }
