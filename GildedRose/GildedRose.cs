@@ -42,13 +42,7 @@ public class GildedRose(IList<Item> items)
                             }
                         }
 
-                        if (item.SellIn < 6)
-                        {
-                            if (item.Quality < 50)
-                            {
-                                item.Quality = item.Quality + 1;
-                            }
-                        }
+                        
                     }
                 }
             }
