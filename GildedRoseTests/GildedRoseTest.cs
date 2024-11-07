@@ -33,7 +33,7 @@ public class GildedRoseTest
         int[] sellIns = [100,5,6,10,11,0,-1];
         var random = new Random();
         var next = random.Next(1,3);
-        return next == 1 ? VerifyCombinations(GildedRoseOriginalQualityUpdater, names, qualities, sellIns) : VerifyCombinations(GildedRoseQualityUpdater, names, qualities, sellIns);
+        return next == 1 ? Combination().Verify(GildedRoseOriginalQualityUpdater, names, qualities, sellIns) : Combination().Verify(GildedRoseQualityUpdater, names, qualities, sellIns);
     }
 
     private static string GildedRoseQualityUpdater(string name, int quality, int sellIn)
